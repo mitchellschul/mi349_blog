@@ -1,2 +1,2 @@
 # mi349_blog
-https://extraordinary-biscuit-c9e961.netlify.app/
+Da blog - https://extraordinary-biscuit-c9e961.netlify.app/
