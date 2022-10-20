@@ -12,23 +12,21 @@
 
     <header>
         <h1>Mitchell's Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+    <section id="blog">
+        <h2>Mitchell's "Cooking" Blog</h2>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-
-        </ul>
-    </nav>
-
-    <main>
-        <h1>Home</h1>
-
-        <article>
-            <h2>What's for lunch? I don't know</h2>
-            <h4> Mitchell Schuldinger </h4>
-            <time datetime="2022-10-16">10-16-2022</time>
+        <article class="blog-post">
+            <h3>What's for lunch? I don't know</h3>
+            <address class="author"> <a rel="author" href="http://mitchschul.com">Mitchell Schuldinger</a></address>
+            <time datetime="2022-10-16" title="October 16, 2022">Oct 16, 2022</time>
 
             <p>
                 Today has been a super super busy day, and I don't have much time<br>
@@ -43,7 +41,7 @@
                 <li>A handfull of gluten free penne pasta noodles</li>
                 <li>A half jar of vodka sauce</li>
                 <li>A quarter of an onion</li>
-                <li>A few bulbs of garlic</li>
+                <li>A few cloves of garlic</li>
             </ul>
             <p>
                 Yes, I know I had pasta for dinner last night, but I am broke<br>
@@ -69,8 +67,40 @@
                 rating of 7/10.<br>
                 <br>
             </p>
+            <table>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Amount</th>
+                    <th>Cook Time</th>
+                </tr>
+                <tr>
+                    <td>Seasoned hamburger meat</td>
+                    <td>1/2 pound</td>
+                    <td>10 minutes</td>
+                </tr>
+                <tr>
+                    <td>Penne pasta</td>
+                    <td>About 1 cup, dry</td>
+                    <td>8 minutes</td>
+                </tr>
+                <tr>
+                    <td>Vodka sauce</td>
+                    <td>About 1 cup</td>
+                    <td>5 minutes</td>
+                </tr>
+                <tr>
+                    <td>Onion</td>
+                    <td>1/4 cup, sliced</td>
+                    <td>5 minutes</td>
+                </tr>
+                <tr>
+                    <td>Garlic</td>
+                    <td>2 cloves, minced</td>
+                    <td>5 minutes</td>
+                </tr>
+            </table>
             <p>
-                This is not the actual dish I made. Thank google for this one.
+                This is not the actual dish I made. Thank Google for this one.
             </p>
             <img src="penne.jpeg" alt="Bulbs of garlic">
             <p>
@@ -78,10 +108,10 @@
             </p>
         </article>
 
-        <article>
-            <h2>Dinner for tonight</h2>
-            <h4> Mitchell Schuldinger </h4>
-            <time datetime="2022-10-15">10-15-2022</time>
+        <article class="blog-post">
+            <h3>Dinner for tonight</h3>
+            <address class="author"> <a rel="author" href="http://mitchschul.com">Mitchell Schuldinger</a></address>
+            <time datetime="2022-10-15" title="October 15, 2022">Oct 15, 2022</time>
 
             <p>
                 I am not sure what exactly to write this blog post on, so I <br>
@@ -128,8 +158,17 @@
                 Time to clean up.
             </p>
         </article>
-    </main>
+    </section>
 
+    <section>
+        <form>
+            <label>
+                Sign up for my newsletter
+                <input type="text">
+            </label>
+            <button>Subscribe</button>
+        </form>
+    </section>
 
 </body>
 
