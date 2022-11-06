@@ -8,26 +8,29 @@ body{
 
 header {
     padding-top: 30px;
+    padding-bottom: 30px;
     border-top: 10px solid #242424;
     border-bottom: 10px solid #242424;
     text-align: center;
+    width: 90%;
+    background: #fff;
 }
 
 nav {
-    padding-bottom: 30px;
+    flex: 1;
 }
 
 nav ul{
     list-style-type: none;
-    padding: 0px;
-    
+    padding-bottom: 0px;
+    position: sticky;
+    top: 10em;
 }
+
 nav ul li{
-    float: left;
+    padding-bottom: 10px;
 }
-nav ul li a{
-    padding-right: 5px;
-}
+
 
 h1 {
     font-size: 3em;
@@ -51,13 +54,34 @@ time {
     color: rgb(121, 121, 121);
 }
 
-main {
+/* main {
     margin-top: 30px;
+} */
+
+#content-container{
+    display: flex;
 }
 
-
 #blog {
-    margin-top: 30px;
+    margin-top: 35px;
+    position: relative;
+    flex: 5;
+}
+
+#about{
+    margin-top: 35px;
+    position: relative;
+    flex: 5;
+}
+
+#contact{
+    margin-top: 35px;
+    position: relative;
+    flex: 5;
+}
+
+.nav-item{
+    text-decoration: none;
 }
 
 .blog-title{
@@ -70,6 +94,20 @@ main {
 
 .info-table {
     text-align: left;
+}
+
+.img-container{
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin-right: 5px;
+}
+
+.about-img-container{
+    height: 60%;
+    width: 60%;
+    float: left;
+    margin-right: 5px;
 }
 
 #contact-form {

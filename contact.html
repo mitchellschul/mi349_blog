@@ -10,46 +10,47 @@
 </head>
 
 <body>
-
     <header>
         <h1>Mitchell's Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <h2>Contact Mitchell</h2>
+    <div id="content-container">
+        <nav class="sticky">
+            <ul>
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
 
-        <p>
-            If you would like to contact me, please fill out the form below.
-        </p>
+        <section id="contact">
+            <h2>Contact Mitchell</h2>
 
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" class="form-item" required>
+            <p>
+                If you would like to contact me, please fill out the form below.
+            </p>
 
-            <label for="email">Email Address:</label>
-            <input type="email" name="email" id="email" class="form-item" required>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" class="form-item" required>
 
-            <label for="reasons">Reason For Contact:</label>
-            <select id="reasons" class="form-item">
-                <option value="hi">Saying Hi</option>
-                <option value="contractor">Looking For a Contractor</option>
-                <option value="intrested">Interested In An Interview</option>
-            </select>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" class="form-item" required>
 
-            <label for="message">Message:</label>
+                <label for="reasons">Reason For Contact:</label>
+                <select id="reasons" class="form-item">
+                    <option value="hi">Saying Hi</option>
+                    <option value="contractor">Looking For a Contractor</option>
+                    <option value="intrested">Interested In An Interview</option>
+                </select>
 
-            <textarea name="message" id="message" cols="30" rows="10" class="form-item" required></textarea>
+                <label for="message">Message:</label>
 
-            <button>Submit</button>
-        </form>
-    </main>
+                <textarea name="message" id="message" cols="30" rows="10" class="form-item" required></textarea>
+
+                <button>Submit</button>
+            </form>
+        </section>
 
 </body>
 
