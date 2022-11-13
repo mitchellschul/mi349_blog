@@ -12,12 +12,13 @@ header {
     border-top: 10px solid #242424;
     border-bottom: 10px solid #242424;
     text-align: center;
-    width: 90%;
+    width: 100%;
     background: #fff;
 }
 
 nav {
     flex: 1;
+    display: block;
 }
 
 nav ul{
@@ -54,9 +55,9 @@ time {
     color: rgb(121, 121, 121);
 }
 
-/* main {
-    margin-top: 30px;
-} */
+#mobile-nav{
+    display: none;
+}
 
 #content-container{
     display: flex;
@@ -129,3 +130,51 @@ time {
 
 
 
+/* Media Queries */
+
+@media (max-width: 400px){
+    body{
+        margin: 5px 10px;
+        padding: 5px 5px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    p{
+        width: 350px;
+    }
+
+    #mobile-nav{
+        display: block;
+    }
+
+    #mobile-nav ul{
+        margin-left: 25%;
+        padding: 0;
+        list-style-type: none;
+        padding-bottom: 0px;
+        position: sticky;
+        top: 10em;
+    }
+
+    #mobile-nav ul li{
+        display: inline;
+        padding-right: 10px;
+    }
+    
+
+    #blog{
+        top: -30px;
+    }
+
+    #about{
+        top: -30px;
+    }
+
+    #contact{
+        top: -30px;
+    }
+
+}
